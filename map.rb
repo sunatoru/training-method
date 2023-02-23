@@ -9,3 +9,10 @@ f = { BANANA: 100, ORANGE: 200, STAGE: 500 }
 # keyとvalue(s)においてmapを使用してkeyの値を大文字から小文字にし、valueのsの値を*2を使用して２倍の値を表示するように行いそれをhashで表すために最後に.to_hを付け足す。
 new_f = f.map { |key, s| [key.downcase, s * 2 ] }.to_h
 p new_f
+
+
+countries = ["japan", "america", "iceland"]
+#with_indexを使用することで配列の要素に（０から始まる数）を添えることができるメソッド
+countries.map.with_index{ |country,index|
+  puts "#{index}番目は#{country}"
+}
